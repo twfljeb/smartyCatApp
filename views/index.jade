@@ -1,5 +1,67 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+html
+  head
+    meta(charset='UTF-8')
+    |         
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |         
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    |         
+    title Home
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    |         
+    link(rel='stylesheet', href='stylesheets/style.css')
+    |         
+    link(href='https://fonts.googleapis.com/css?family=Alfa+Slab+One', rel='stylesheet')
+    // Latest compiled and minified JavaScript
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    |         
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+  |     
+  body
+    .bg.container-fluid
+      .row
+        .col-md-3.menu
+          .logo
+            img(src='images/LogoGlasses150.png')
+          |                     
+          .mainNav
+            ul
+              li
+                | APPS 
+                a.apps
+                  img(src='images/apps.png', alt='')
+              |                             
+              li
+                | SERVICES 
+                a.services
+                  img(src='images/services.png', alt='')
+              |                             
+              li
+                | ABOUT 
+                a.info
+                  img(src='images/info.png', alt='')
+              |                             
+              li
+                | CONTACT 
+                a.contact
+                  img(src='images/contact.png', alt='')
+        |                 
+        |            
+        |                
+        |                 
+        .col-md-9
+          .intro
+            p.welcome Welcome to
+            |                     
+            p
+              span.smarty smarty
+              span.design cat.design
+          |                 
+          p.tagLine(hidden='') JAVASCRIPT DEVELOPMENT
+        // end col-md-9
+      // end row
+    // end container
+    script(src='javascripts/jquery-ui.min.js')
+    |         
+    script(src='javascripts/myScripts.js')
