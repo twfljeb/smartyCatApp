@@ -28,9 +28,9 @@ html
           .mainNav
             ul
               li
-                a(href='/apps') APPS
+                a(href='/') HOME
                 |                                 
-                img(src='images/apps.png', alt='')
+                img(src='images/home.png', alt='')
               |                             
               li
                 a(href='/services') SERVICES
@@ -44,26 +44,38 @@ html
               |                             
               li
                 a(href='/contact') CONTACT
-                |                                  
+                |                                 
                 img(src='images/contact.png', alt='')
         |                 
-        |            
-        |                
-        |                 
-        .col-md-9
-          .intro
-            p.welcome Welcome to
-            |                     
-            p
-              span.smarty smarty
-              span.design cat.design
-          |                 
-          p.tagLine(hidden='') JAVASCRIPT DEVELOPMENT
-          |                 
-          .homeBg
+        .col-md-9.appsWrapper
+          .row.appDisplayPanel
+            .col-md-4.appBox
+              p.appCaption(style='color: #f1c37e') USER AUTHETICATION
+              |                             
+              .appDisplay
+            |                         
+            .col-md-4.appBox
+              p.appCaption(style='color: #f1c37e') E-COMMERCE
+              |                             
+              .appDisplay
+            |                         
+            .col-md-4.appBox
+              p.appCaption(style='color: #f1c37e') BLOG SYSTEMS
+              |                             
+              .appDisplay
+          |                     
+          .row.infoSection
+            .col-md-12
+              h3 CUSTOM DESIGNED APPLICATIONS
+              |  
+              |                             
+              p.infoSectionText
+                | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+          |                     
+          .appBg
         // end col-md-9
-      // end row
+    // end row
     // end container
     script(src='javascripts/jquery-ui.min.js')
-    |         
+    |     
     script(src='javascripts/myScripts.js')

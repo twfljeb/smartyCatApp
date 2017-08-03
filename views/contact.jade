@@ -1,0 +1,102 @@
+html
+  head
+    meta(charset='UTF-8')
+    |         
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |         
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    |         
+    title Home
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    |         
+    link(rel='stylesheet', href='stylesheets/style.css')
+    |         
+    link(href='https://fonts.googleapis.com/css?family=Alfa+Slab+One', rel='stylesheet')
+    // Latest compiled and minified JavaScript
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    |         
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+  |     
+  body
+    .bg.container-fluid
+      .row
+        .col-md-3.menu
+          .logo
+            img(src='images/LogoGlasses150.png')
+          |                     
+          .mainNav
+            ul
+              li
+                a(href='/') HOME
+                |                                 
+                img(src='images/home.png', alt='')
+              |                             
+              li
+                a(href='/apps') APPS
+                |                                 
+                img(src='images/apps.png', alt='')
+              |                             
+              li
+                a(href='/services') SERVICES
+                |                                 
+                img(src='images/services.png', alt='')
+              |                             
+              li
+                a(href='/about') ABOUT
+                |                                 
+                img(src='images/about.png', alt='')
+        |                 
+        .col-md-9
+          .container.contactWrapper
+            legend
+              p.contactHeader How May We Help You?
+            |                         
+            .formWrapper.row
+              .col-md-6
+                form(action='', method='POST', role='form')
+                  .form-group
+                    label(for='') Name / Company
+                    |                                         
+                    input.form-control(type='text', id='', placeholder='')
+                    |                                         
+                    label(for='') Email
+                    |                                         
+                    input.form-control(type='email', id='', placeholder='')
+                    |                                         
+                    label(for='') Message
+                    |                                         
+                    textarea#textArea(data-pg-name='message', style='width: 100%')
+                  |                                     
+                  button.btn.btn-lg.myBtn(type='submit') Submit
+              // end div col-md-6
+              .col-md-6.contactMethodWrapper
+                .contactMethod
+                  img(src='images/services.png')
+                  .contactMethodText Chat with us online here
+                |                                 
+                .contactMethod
+                  img(src='images/github.png')
+                  .contactMethodText See what we&apos;re doing on GitHub
+                |                                 
+                .contactMethod
+                  img(src='images/linkedin.png')
+                  .contactMethodText Connect with us on LinkedIn
+                |                                 
+                .contactMethod
+                  img(src='images/twitter.png')
+                  .contactMethodText Send us a tweet on Twitter
+                |                                 
+                .contactMethod
+                  img(src='images/fb.png')
+                  .contactMethodText Follow us on Facebook
+              // end div col-md-6
+            // end formWrapper
+          |                     
+          .homeBg
+      // end col-md-9
+    // end row
+    // end container
+    script(src='javascripts/jquery-ui.min.js')
+    |     
+    script(src='javascripts/myScripts.js')
